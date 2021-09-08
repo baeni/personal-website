@@ -4,7 +4,7 @@ export default {
 
     landing: {
       heading: 'I\'m baeni',
-      subtitle: '— a self-taught developer based in Germany with a fetish for design. Feel free to follow me on my super active socials.'
+      subtitle: '— a self-taught developer based in Germany with a fetish for design. Feel free to follow me on my super active socials below.'
     },
     contact: {
       heading: 'Contact'
