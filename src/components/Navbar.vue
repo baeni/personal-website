@@ -2,10 +2,9 @@
   <q-header>
     <q-toolbar class="container">
       <q-btn
-        class="text-h2"
+        class="text-h2 text-hammersmith-one"
         label="baeni"
         :to="{ path: '/' }"
-        no-caps
         flat
         stretch
       />
