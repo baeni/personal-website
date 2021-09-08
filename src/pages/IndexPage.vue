@@ -1,24 +1,17 @@
 <template>
-  <q-page>
+  <q-page class="absolute-top">
     <!-- landing -->
     <section class="window-height flex flex-center">
+      <q-img class="absolute window-width window-height" style="z-index: -99; opacity: .075;" fit="cover" src="~assets/squares.gif" />
       <!-- <video class="absolute-top window-width window-height" src="~assets/waves.mp4" autoplay loop /> -->
       <div class="container row q-col-gutter-x-lg">
-        <q-img class="col-3" fit="contain" src="~assets/logo.png" />
-        <div class="col-9 q-my-auto">
+        <q-img class="col-2" fit="contain" src="~assets/logo.png" />
+        <div class="col-10 q-my-auto">
           <div class="text-subtitle1 text-lightest">
-            <span class="text-h1 text-white">{{ $t('indexPage.landing.heading') }}</span>
+            <span class="text-h1 text-white text-hammersmith-one">{{ $t('indexPage.landing.heading') }}</span>
             {{ $t('indexPage.landing.subtitle') }}
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- contact -->
-    <section id="contact">
-      <div class="container">
-        <div class="text-h3 text-light text-uppercase text-center q-pb-lg">{{ $t('indexPage.contact.heading') }}</div>
-        <contact-list :contacts="contacts" />
       </div>
     </section>
 
@@ -29,12 +22,39 @@
         <project-list :projects="projects" />
       </div>
     </section>
+
+    <!-- contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="text-h3 text-light text-uppercase text-center q-pb-lg">{{ $t('indexPage.contact.heading') }}</div>
+        <contact-list :contacts="contacts" />
+      </div>
+    </section>
   </q-page>
 </template>
 
 <script>
-import ContactList from 'components/ContactList';
 import ProjectList from "components/ProjectList";
+import ContactList from 'components/ContactList';
+
+const projects = [
+  {
+    thumbnail: "projects/moovy.png",
+    tags: [
+      "moovy",
+      "movie finder"
+    ],
+    destination: "https://moovy.baeni.de"
+  },
+  {
+    thumbnail: "projects/shortener.png",
+    tags: [
+      "link shortener",
+      "url shortener"
+    ],
+    destination: "/#/shortener"
+  }
+];
 
 const contacts = [
   {
@@ -63,30 +83,11 @@ const contacts = [
   }
 ];
 
-const projects = [
-  {
-    thumbnail: "projects/moovy.png",
-    tags: [
-      "moovy",
-      "movie finder"
-    ],
-    destination: "https://moovy.baeni.de"
-  },
-  {
-    thumbnail: "projects/shortener.png",
-    tags: [
-      "link shortener",
-      "url shortener"
-    ],
-    destination: "/#/shortener"
-  }
-];
-
 export default {
   name: 'IndexPage',
   components: {
-    ContactList,
-    ProjectList
+    ProjectList,
+    ContactList
   },
   data() {
     return {
@@ -96,10 +97,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-video {
-  z-index: -99;
-  filter: brightness(.25);
-}
-</style>
