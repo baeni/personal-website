@@ -1,8 +1,10 @@
 <template>
   <div class="col-6">
-    <q-card class="bg-transparent" flat>
-      <q-img :src="project.thumbnail" />
-    </q-card>
+    <a :href="project.destination" target="_blank">
+      <q-card class="bg-transparent" flat>
+        <q-img :src="project.thumbnail" />
+      </q-card>
+    </a>
   </div>
 </template>
 
