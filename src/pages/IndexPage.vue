@@ -61,13 +61,13 @@ const contacts = [
     thumbnail: '/contacts/discord.png',
     title: 'Discord',
     description: 'Lorem ipsum dolar sit amet',
-    destination: 'https://discord.com'
+    destination: 'https://discord.com/invite/AJr2d8Z'
   },
   {
     thumbnail: '/contacts/facebook.png',
     title: 'Facebook',
     description: 'Lorem ipsum dolar sit amet',
-    destination: 'https://facebook.com'
+    destination: 'https://www.facebook.com/benjamin.saalfeld.1/'
   },
   {
     thumbnail: '/contacts/github.png',
@@ -79,7 +79,7 @@ const contacts = [
     thumbnail: '/contacts/instagram.png',
     title: 'Instagram',
     description: 'Lorem ipsum dolar sit amet',
-    destination: 'https://facebook.com'
+    destination: 'https://instagram.com/benny.sfd'
   }
 ];
 
