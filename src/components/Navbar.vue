@@ -13,10 +13,10 @@
 
       <q-btn
         class="text-bold"
-        :label="$t('indexPage.portfolio.heading')"
+        :label="$t('indexPage.projects.heading')"
         no-caps
         flat
-        @click="toId('/', 'portfolio')"
+        @click="toId('/', 'projects')"
       />
       <q-btn
         class="text-bold"
