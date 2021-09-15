@@ -9,10 +9,8 @@ export default {
     contact: {
       heading: 'Contact'
     },
-    portfolio: {
-      heading: 'Portfolio',
-      formSearch: 'Search for projects — e.g. \'Link Shortener\'',
-      formSearchHint: 'Multiple search terms can be separated with a comma'
+    projects: {
+      heading: 'Open Source Projects'
     }
   },
   error404Page: {
