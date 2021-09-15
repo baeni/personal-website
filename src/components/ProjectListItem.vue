@@ -1,20 +1,20 @@
 <template>
-  <div class="col-6">
-    <q-card class="full-height justify-between" dark>
+  <div :class="$q.screen.gt.xs ? 'col-6' : 'col-12'">
+    <q-card class="full-height" dark>
       <q-card-section>
         <div class="row">
-          <q-badge class="col-shrink" :label="project.language" color="light" />
-          <div class="col text-caption text-light text-right">Updated {{ updated }} ago</div>
+          <q-badge class="col-shrink" :label="language" color="light" />
+          <div class="col text-caption text-light text-right">{{ $t('indexPage.projects.updated', { time: updated }) }}</div>
         </div>
         
         <div class="col text-h2 q-pt-md">{{ project.name }}</div>
         <div class="text-body1 text-grey">{{ description }}</div>
       </q-card-section>
 
-      <q-card-section>
+      <q-card-section class="bg-darkest">
         <q-card-actions>
-          <q-btn class="bg-white text-dark" label="Visit site" type="a" :href="project.homepage" target="_blank" flat />
-          <q-btn label="Show on GitHub" type="a" :href="project.html_url" target="_blank" flat />
+          <q-btn class="bg-lightest text-darkest text-bold" :label="$t('indexPage.projects.toSite')" :disable="!project.homepage" type="a" :href="project.homepage" target="_blank" flat />
+          <q-btn icon="fab fa-github" type="a" :href="project.html_url" target="_blank" flat />
         </q-card-actions>
       </q-card-section>
     </q-card>
@@ -31,8 +31,11 @@ export default {
     }
   },
   computed: {
+    language() {
+      return this.project.language ? this.project.language : this.$t('indexPage.projects.noLanguage');
+    },
     description() {
-      return this.project.description ? this.project.description : 'No description available'
+      return this.project.description ? this.project.description : this.$t('indexPage.projects.noDescription');
     },
     updated() {
       const now = new Date();
