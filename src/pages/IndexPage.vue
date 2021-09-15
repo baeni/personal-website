@@ -3,9 +3,9 @@
     <!-- landing -->
     <section class="flex window-height">
       <!-- <q-img class="absolute-top window-width window-height" style="z-index: -99; opacity: .075;" src="~assets/squares.gif" /> -->
-      <video class="absolute-top window-width window-height" style="z-index: -99; opacity: .175;" src="~assets/waves.mp4" autoplay loop />
-      <div class="container q-py-xl row q-col-gutter-x-lg">
-        <q-img class="col-2" fit="contain" src="~assets/logo.png" />
+      <!-- <video class="absolute-top fit" style="z-index: -99; opacity: .175;" src="~assets/waves.mp4" autoplay loop /> -->
+      <div class="container row q-col-gutter-x-lg">
+        <q-img v-if="$q.screen.gt.xs" class="col-2" fit="contain" src="~assets/logo.png" />
         <div class="col-10 q-my-auto">
           <div class="text-subtitle1 text-lightest">
             <span class="text-h1 text-white text-hammersmith-one">{{ $t('indexPage.landing.heading') }}</span>
@@ -77,7 +77,7 @@ export default {
   },
   computed: {
     projects() {
-      return this.$store.getters['GithubModule/getRepositories']
+      return this.$store.getters['GithubModule/getRepositories'];
     }
   }
 }
