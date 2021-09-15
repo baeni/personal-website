@@ -1,10 +1,10 @@
 <template>
-  <q-page class="absolute-top">
+  <q-page>
     <!-- landing -->
-    <section class="window-height flex flex-center">
-      <q-img class="absolute window-width window-height" style="z-index: -99; opacity: .075;" src="~assets/squares.gif" />
-      <!-- <video class="absolute-top window-width window-height" src="~assets/waves.mp4" autoplay loop /> -->
-      <div class="container row q-col-gutter-x-lg">
+    <section class="flex window-height">
+      <!-- <q-img class="absolute-top window-width window-height" style="z-index: -99; opacity: .075;" src="~assets/squares.gif" /> -->
+      <video class="absolute-top window-width window-height" style="z-index: -99; opacity: .175;" src="~assets/waves.mp4" autoplay loop />
+      <div class="container q-py-xl row q-col-gutter-x-lg">
         <q-img class="col-2" fit="contain" src="~assets/logo.png" />
         <div class="col-10 q-my-auto">
           <div class="text-subtitle1 text-lightest">
@@ -15,10 +15,10 @@
       </div>
     </section>
 
-    <!-- portfolio -->
-    <section id="portfolio">
+    <!-- projects -->
+    <section id="projects">
       <div class="container">
-        <div class="text-h3 text-light text-uppercase text-center q-pb-lg">{{ $t('indexPage.portfolio.heading') }}</div>
+        <div class="text-h3 text-light text-uppercase text-center q-pb-lg">{{ $t('indexPage.projects.heading') }}</div>
         <project-list :projects="projects" />
       </div>
     </section>
@@ -36,25 +36,6 @@
 <script>
 import ProjectList from "components/ProjectList";
 import ContactList from 'components/ContactList';
-
-const projects = [
-  {
-    thumbnail: "projects/moovy.png",
-    tags: [
-      "moovy",
-      "movie finder"
-    ],
-    destination: "https://moovy.baeni.de"
-  },
-  {
-    thumbnail: "projects/shortener.png",
-    tags: [
-      "link shortener",
-      "url shortener"
-    ],
-    destination: "/#/shortener"
-  }
-];
 
 const contacts = [
   {
@@ -91,8 +72,12 @@ export default {
   },
   data() {
     return {
-      projects: projects,
       contacts: contacts
+    }
+  },
+  computed: {
+    projects() {
+      return this.$store.getters['GithubModule/getRepositories']
     }
   }
 }
