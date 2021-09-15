@@ -5,7 +5,7 @@ const url = 'https://api.github.com';
 export function fetchRepositories(context) {
     const options = {
         method: 'GET',
-        url: url+'/users/baeni/repos'
+        url: url+'/users/baeni/repos?sort=updated'
     }
 
     axios.request(options)
