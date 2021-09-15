@@ -10,7 +10,12 @@ export default {
       heading: 'Contact'
     },
     projects: {
-      heading: 'Open Source Projects'
+      heading: 'Open Source Projects',
+      noLanguage: 'No language recognized',
+      updated: 'Updated {time} ago',
+      noDescription: 'No description available',
+      toSite: 'Visit site',
+      toGithub: 'Show on GitHub'
     }
   },
   error404Page: {
