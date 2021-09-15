@@ -1,5 +1,5 @@
 <template>
-  <div class="row q-col-gutter-xl">
+  <div class="row q-col-gutter-lg">
     <contact-list-item
       v-for="(contact, i) in contacts"
       :key="i"
