@@ -2,8 +2,7 @@
   <q-page>
     <!-- landing -->
     <section class="flex window-height">
-      <!-- <q-img class="absolute-top window-width window-height" style="z-index: -99; opacity: .075;" src="~assets/squares.gif" /> -->
-      <!-- <video class="absolute-top fit" style="z-index: -99; opacity: .175;" src="~assets/waves.mp4" autoplay loop /> -->
+      <q-img class="absolute-top full-width window-height" style="z-index: -99; opacity: .0175;" src="~assets/squares.gif" />
       <div class="container row q-col-gutter-x-lg">
         <q-img v-if="$q.screen.gt.xs" class="col-2" fit="contain" src="~assets/logo.png" />
         <div class="col-10 q-my-auto">
