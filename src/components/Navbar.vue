@@ -77,7 +77,8 @@ export default {
       locale,
       localeOptions: [
         { label: 'English', value: 'en' },
-        { label: 'Deutsch', value: 'de' }
+        { label: 'Deutsch', value: 'de' },
+        { label: 'Svenska', value: 'se' }
       ],
     }
   }
