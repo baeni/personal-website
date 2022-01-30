@@ -4,7 +4,7 @@ export default {
 
     landing: {
       heading: 'Jag är baeni',
-      subtitle: '— en självlärd utvecklare baserad i tyskland som är besatt av design. Följ mig gärna på mina väldigt aktiva sociala medier nedan.'
+      subtitle: '— en självlärd utvecklare baserad i tyskland som är besatt av design. Följ mig gärna på mina väldigt aktiva sociala medier nedan. Oh, and sometimes I game as well. Much.'
     },
     contact: {
       heading: 'Kontakt'
