@@ -1,5 +1,5 @@
 <template>
-  <div :class="$q.screen.gt.xs ? 'col-3' : 'col-6'">
+  <div :class="$q.screen.gt.xs ? 'col-2' : 'col-6'">
     <a :href="contact.destination" target="_blank">
       <q-card class="bg-transparent" flat>
         <q-img :src="contact.thumbnail" />
