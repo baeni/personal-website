@@ -10,30 +10,35 @@
             <span class="text-h1 text-white text-hammersmith-one">{{ $t('indexPage.landing.heading') }}</span>
             {{ $t('indexPage.landing.subtitle') }}
           </div>
+          <contact-list class="q-pt-lg" :contacts="contacts" />
         </div>
       </div>
     </section>
 
     <!-- projects -->
+    <!--
     <section id="projects">
       <div class="container">
         <div class="text-h3 text-light text-uppercase text-center q-pb-lg">{{ $t('indexPage.projects.heading') }}</div>
         <project-list :projects="projects" />
       </div>
     </section>
+    -->
 
     <!-- contact -->
+    <!--
     <section id="contact">
       <div class="container">
         <div class="text-h3 text-light text-uppercase text-center q-pb-lg">{{ $t('indexPage.contact.heading') }}</div>
         <contact-list :contacts="contacts" />
       </div>
     </section>
+    -->
   </q-page>
 </template>
 
 <script>
-import ProjectList from "components/ProjectList";
+//import ProjectList from "components/ProjectList";
 import ContactList from 'components/ContactList';
 
 const contacts = [
@@ -66,7 +71,7 @@ const contacts = [
 export default {
   name: 'IndexPage',
   components: {
-    ProjectList,
+    //ProjectList,
     ContactList
   },
   data() {
@@ -74,10 +79,12 @@ export default {
       contacts: contacts
     }
   },
+  /*
   computed: {
     projects() {
       return this.$store.getters['GithubModule/getRepositories'];
     }
   }
+  */
 }
 </script>
