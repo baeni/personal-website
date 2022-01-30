@@ -13,6 +13,5 @@ export function fetchRepositories(context) {
             context.commit('setRepositories', res.data.filter(repository => {
                 return repository.description !== 'GitHub Profile README';
             }));
-            console.log(res.data);
         }).catch(err => Promise.reject(err));
 }
