@@ -39,7 +39,7 @@ export default {
     },
     updated() {
       const now = new Date();
-      const then = new Date(this.project.updated_at);
+      const then = new Date(this.project.pushed_at);
       const differenceMillis = now.getTime() - then.getTime();
       let divider = undefined;
       let short = undefined;
