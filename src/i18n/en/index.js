@@ -16,6 +16,11 @@ export default {
       noDescription: 'No description available',
       toSite: 'Visit site',
       toGithub: 'Show on GitHub'
+    },
+    footer: {
+      termsOfService: 'Terms of Service',
+      privacyPolicy: 'Privacy Policy',
+      imprint: 'Imprint'
     }
   },
   error404Page: {

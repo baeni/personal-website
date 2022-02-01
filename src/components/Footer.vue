@@ -8,7 +8,7 @@
         style="text-decoration: none;"
         to="terms-of-service"
       >
-        Terms of service
+        {{ $t('indexPage.footer.termsOfService') }}
       </router-link>
 
       <q-space />
@@ -18,7 +18,7 @@
         style="text-decoration: none;"
         to="privacy-policy"
       >
-        Privacy policy
+        {{ $t('indexPage.footer.privacyPolicy') }}
       </router-link>
 
       <q-space />
@@ -28,7 +28,7 @@
         style="text-decoration: none;"
         to="imprint"
       >
-        Imprint
+        {{ $t('indexPage.footer.imprint') }}
       </router-link>
 
       <q-space />

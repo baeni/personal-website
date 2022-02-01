@@ -16,6 +16,11 @@ export default {
       noDescription: 'Ingen förklaring tillgänglig',
       toSite: 'Besök Hemsida',
       toGithub: 'Visa på GitHub'
+    },
+    footer: {
+      termsOfService: 'Användarvillkor',
+      privacyPolicy: 'Integritetspolicy',
+      imprint: 'Avtryck'
     }
   },
   error404Page: {
