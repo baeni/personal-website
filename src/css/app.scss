@@ -51,7 +51,7 @@ section {
   color: $lightest;
 }
 
-.text-h1, .text-h2, .text-h3 {
+.text-h1, .text-h2, .text-h3, .text-h4 {
   font-weight: bold;
 }
 
@@ -68,6 +68,11 @@ section {
 .text-h3 {
   font-size: 16px;
   line-height: 16px * 1.5;
+}
+
+.text-h4 {
+  font-size: 12px;
+  line-height: 12px * 1.5;
 }
 
 .text-subtitle1 {
