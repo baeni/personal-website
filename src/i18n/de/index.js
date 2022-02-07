@@ -4,7 +4,8 @@ export default {
 
     landing: {
       heading: 'Ich bin baeni',
-      subtitle: '— ein selbstgelehrter Entwickler aus Deutschland mit einem Faible für Design. Folge mir gerne auf meinen super aktiven Socials weiter unten. Achso, und manchmal zocke ich auch.'
+      subtitle: '— ein selbstgelehrter Entwickler aus Deutschland mit einem Faible für Design. Stalk\' gerne meinen super aktiven Socials order inspiziere meine Open Source Projekte weiter unten. Achso, und manchmal zocke ich auch.',
+      mailMe: 'Oder maile mir!'
     },
     contact: {
       heading: 'Kontakt'
