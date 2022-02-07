@@ -1,8 +1,8 @@
 <template>
   <q-page>
     <!-- landing -->
-    <section class="window-height flex flex-center">
-      <video class="absolute-top window-width window-height" src="~assets/lost.mp4" autoplay loop />
+    <section class="flex flex-center window-height">
+      <q-img class="absolute-top full-width window-height" style="z-index: -99; opacity: .65;" src="~assets/kermit.gif" autoplay loop />
       <div class="container text-center">
         <div class="text-h1 text-uppercase text-lightest">{{ $t('error404Page.heading') }}</div>
         <div class="text-subtitle1 text-lightest">{{ $t('error404Page.description') }}</div>
