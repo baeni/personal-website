@@ -5,7 +5,7 @@
       :key="i"
       :contact="contact"
     />
-    <a class="text-light text-h4" style="text-decoration: none;" href="mailto:hello@baeni.de?subject=Hi baeni!">{{ $t('indexPage.landing.mailMe') }}</a>
+    <a class="text-light text-h4" style="text-decoration: none;" href="mailto:baeni.saa@gmail.com?subject=Hi baeni!">{{ $t('indexPage.landing.mailMe') }}</a>
   </div>
 </template>
 
