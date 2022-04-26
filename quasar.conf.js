@@ -148,27 +148,27 @@ module.exports = configure(function (ctx) {
         theme_color: '#027be3',
         icons: [
           {
-            src: 'icons/icon-128x128.png',
+            src: 'https://brand.baeni.de/logo-blue@128.png',
             sizes: '128x128',
             type: 'image/png'
           },
           {
-            src: 'icons/icon-192x192.png',
+            src: 'https://brand.baeni.de/logo-blue@192.png',
             sizes: '192x192',
             type: 'image/png'
           },
           {
-            src: 'icons/icon-256x256.png',
+            src: 'https://brand.baeni.de/logo-blue@256.png',
             sizes: '256x256',
             type: 'image/png'
           },
           {
-            src: 'icons/icon-384x384.png',
+            src: 'https://brand.baeni.de/logo-blue@384.png',
             sizes: '384x384',
             type: 'image/png'
           },
           {
-            src: 'icons/icon-512x512.png',
+            src: 'https://brand.baeni.de/logo-blue@512.png',
             sizes: '512x512',
             type: 'image/png'
           }
