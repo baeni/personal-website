@@ -6,7 +6,7 @@
           <q-badge class="col-shrink" :label="language" color="light" />
           <div class="col text-caption text-light text-right">{{ $t('indexPage.projects.updated', { time: updated }) }}</div>
         </div>
-        
+
         <div class="col text-h2 q-pt-md">{{ project.name }}</div>
         <div class="text-body1 text-grey">{{ description }}</div>
       </q-card-section>
@@ -22,6 +22,8 @@
 </template>
 
 <script>
+import { useI18n } from 'vue-i18n'
+
 export default {
   name: 'ProjectListItem',
   props: {
@@ -38,32 +40,36 @@ export default {
       return this.project.description ? this.project.description : this.$t('indexPage.projects.noDescription');
     },
     updated() {
+      const { t } = useI18n()
+
       const now = new Date();
       const then = new Date(this.project.pushed_at);
-      const differenceMillis = now.getTime() - then.getTime();
-      let divider = undefined;
-      let short = undefined;
 
-      if (differenceMillis / 86400000 >= 1) {
-        divider = 86400000;
-        short = 'd';
-      }
-      else if (differenceMillis / 3600000 >= 1) {
-        divider = 3600000;
-        short = 'h';
-      }
-      else if (differenceMillis / 60000 >= 1) {
-        divider = 60000;
-        short = 'min';
-      }
-      else if (differenceMillis / 1000 >= 1) {
-        divider = 1000;
-        short = 's';
+      let diffInMillis = now.getTime() - then.getTime();
+      let diffInUnit = undefined;
+      let unit = undefined;
+
+      if(diffInMillis >= 31556952000) {
+        diffInUnit = diffInMillis/31556952000;
+        unit = "y";
+      } else if(diffInMillis >= 2629746000) {
+        diffInUnit = diffInMillis/2629746000;
+        unit = "mo";
+      } else if(diffInMillis >= 604800000) {
+        diffInUnit = diffInMillis/604800000;
+        unit = "w";
+      } else if(diffInMillis >= 86400000) {
+        diffInUnit = diffInMillis/86400000
+        unit = "d";
+      } else if(diffInMillis >= 3600000) {
+        diffInUnit = diffInMillis/3600000
+        unit = "h";
+      } else if(diffInMillis >= 60000) {
+        diffInUnit = diffInMillis/60000;
+        unit = "min";
       }
 
-      const difference = differenceMillis / divider;
-
-      return Math.round(difference)+short;
+      return unit != undefined ? Math.floor(diffInUnit)+unit : t('indexPage.projects.lessThanAMin') ;
     }
   }
 }
