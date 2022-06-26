@@ -14,6 +14,7 @@ export default {
       heading: 'Open Source Projects',
       noLanguage: 'No language recognized',
       updated: 'Updated {time} ago',
+      lessThanAMin: 'less than a minute',
       noDescription: 'No description available',
       toSite: 'Visit site',
       toGithub: 'Show on GitHub'
