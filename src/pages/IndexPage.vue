@@ -46,11 +46,6 @@ const contacts = [
     destination: 'https://discord.com/invite/AJr2d8Z'
   },
   {
-    thumbnail: '/contacts/facebook.png',
-    title: 'Facebook',
-    destination: 'https://www.facebook.com/benjamin.saalfeld.1/'
-  },
-  {
     thumbnail: '/contacts/github.png',
     title: 'Github',
     destination: 'https://github.com/baeni'
