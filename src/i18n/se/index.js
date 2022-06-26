@@ -13,6 +13,7 @@ export default {
       heading: 'Open Source Projekt',
       noLanguage: 'Inget språk igenkänt',
       updated: 'Uppdaterad {time} sen',
+      lessThanAMin: 'less than a minute',
       noDescription: 'Ingen förklaring tillgänglig',
       toSite: 'Besök Hemsida',
       toGithub: 'Visa på GitHub'
