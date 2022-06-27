@@ -6,19 +6,9 @@
       <router-link
         class="text-bold text-lightest"
         style="text-decoration: none;"
-        to="terms-of-service"
-      >
-        {{ $t('indexPage.footer.termsOfService') }}
-      </router-link>
-
-      <q-space />
-
-      <router-link
-        class="text-bold text-lightest"
-        style="text-decoration: none;"
         to="privacy-policy"
       >
-        {{ $t('indexPage.footer.privacyPolicy') }}
+        {{ $t('footer.privacyPolicy') }}
       </router-link>
 
       <q-space />
@@ -28,7 +18,7 @@
         style="text-decoration: none;"
         to="imprint"
       >
-        {{ $t('indexPage.footer.imprint') }}
+        {{ $t('footer.imprint') }}
       </router-link>
 
       <q-space />
