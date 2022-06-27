@@ -1,74 +1,62 @@
 <template>
   <q-header>
-    <q-toolbar class="container">
-      <q-btn
-        class="text-h2 text-hammersmith-one"
-        label="baeni"
-        :to="{ path: '/' }"
-        flat
-        stretch
-      />
+    <div class="container row">
+      <q-toolbar class="q-px-none col">
+        <q-btn
+          class="text-h2 text-hammersmith-one"
+          label="baeni"
+          :to="{ path: '/' }"
+          flat
+          stretch
+        />
+      </q-toolbar>
 
-      <q-space />
+      <navbar-list class="q-px-none col-shrink" />
 
-      <q-btn
-        class="text-bold"
-        :label="$t('indexPage.projects.heading')"
-        no-caps
-        flat
-        @click="toId('/', 'projects')"
-      />
-      <q-btn
-        class="text-bold"
-        :label="$t('indexPage.contact.heading')"
-        no-caps
-        flat
-        @click="toId('/', 'contact')"
-      />
+      <q-toolbar class="q-px-none col-shrink">
+        <q-separator
+          size="2px"
+          spaced
+          dark
+          vertical
+          inset
+        />
 
-      <q-separator
-        size="2px"
-        spaced
-        dark
-        vertical
-        inset
-      />
-
-      <q-select
-        v-model="locale"
-        :model-value="locale"
-        :options="localeOptions"
-        behavior="menu"
-        transition-show="scale"
-        transition-hide="fade"
-        color="accent"
-        hide-dropdown-icon
-        emit-value
-        map-options
-        options-dense
-        dense
-        dark
-        standout
-        flat
-      >
-        <template v-slot:append>
-          <q-icon name="fas fa-globe-europe" size="16px" />
-        </template>
-      </q-select>
-    </q-toolbar>
+        <q-select
+          v-model="locale"
+          :model-value="locale"
+          :options="localeOptions"
+          behavior="menu"
+          transition-show="scale"
+          transition-hide="fade"
+          color="accent"
+          hide-dropdown-icon
+          emit-value
+          map-options
+          options-dense
+          dense
+          dark
+          standout
+          flat
+        >
+          <template v-slot:append>
+            <q-icon name="fas fa-language" size="16px" />
+          </template>
+        </q-select>
+      </q-toolbar>
+    </div>
   </q-header>
 </template>
 
 <script>
 import { useI18n } from 'vue-i18n';
 
+import NavbarList from 'components/NavbarList';
+
 export default {
   name: 'Navbar',
-  methods: {
-    async toId(path, hash) {
-      await this.$router.push(path);
-      document.getElementById(hash).scrollIntoView();
-    }
+  components: {
+    NavbarList
   },
   setup() {
     const { locale } = useI18n({ useScope: 'global' });
@@ -78,7 +66,7 @@ export default {
       localeOptions: [
         { label: 'English', value: 'en' },
         { label: 'Deutsch', value: 'de' },
-        { label: 'Svenska', value: 'se' }
+        //{ label: 'Svenska', value: 'se' }
       ],
     }
   }
