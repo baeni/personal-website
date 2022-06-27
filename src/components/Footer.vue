@@ -6,9 +6,9 @@
       <router-link
         class="text-bold text-lightest"
         style="text-decoration: none;"
-        to="privacy-policy"
+        to="imprint"
       >
-        {{ $t('footer.privacyPolicy') }}
+        {{ $t('footer.imprint') }}
       </router-link>
 
       <q-space />
@@ -16,9 +16,9 @@
       <router-link
         class="text-bold text-lightest"
         style="text-decoration: none;"
-        to="imprint"
+        to="privacy-policy"
       >
-        {{ $t('footer.imprint') }}
+        {{ $t('footer.privacyPolicy') }}
       </router-link>
 
       <q-space />
