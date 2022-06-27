@@ -4,29 +4,44 @@ export default {
 
     landing: {
       heading: 'Ich bin baeni',
-      subtitle: '— ein selbstgelehrter Entwickler aus Deutschland mit einem Faible für Design. Stalk\' gerne meinen super aktiven Socials order inspiziere meine Open Source Projekte weiter unten. Achso, und manchmal zocke ich auch.',
-      mailMe: 'Oder maile mir!'
-    },
-    contact: {
-      heading: 'Kontakt'
+      subtitle: '– ein selbstgelehrter Entwickler aus Deutschland mit einem Faible für Design. Stalke gerne meine super aktiven Socials oder siehe meine Open Source Projekte weiter unten an.',
+      mailMe: 'Oder mail\' mir!'
     },
     projects: {
       heading: 'Open Source Projekte',
-      noLanguage: 'Keine Sprache erkannt',
       updated: 'Vor {time} aktualisiert',
       lessThanAMin: 'weniger als einer Minute',
       noDescription: 'Keine Beschreibung verfügbar',
-      toSite: 'Seite ansehen',
-      toGithub: 'Auf GitHub anzeigen'
+      toSite: 'Seite ansehen'
+    }
+  },
+  imprintPage: {
+    imprint: {
+      heading: 'Impressum',
+      subtitleParagraph: 'Gemäß § 5 TMG',
+      country: 'Deutschland',
+      subtitleContact: 'Kontakt'
     },
-    footer: {
-      termsOfService: 'Nutzungsbedingungen',
-      privacyPolicy: 'Datenschutz',
-      imprint: 'Impressum'
+    privacyPolicy: {
+      heading: 'Datenschutzbestimmung',
+      subtitleConsent: 'Zustimmung',
+      subtitleCollect: 'Erfasste Informationen',
+      subtitleUse: 'Wie wir Ihre Informationen verwenden',
+      subtitleLog: 'Log-Dateien',
+      subtitleCookies: 'Cookies und Web Beacons',
+      subtitlePartners: 'Datenschutzrichtlinien von Werbepartnern',
+      subtitleThirdParty: 'Datenschutzrichtlinien von Dritten',
+      subtitleChildren: 'Informationen über Kinder'
     }
   },
   error404Page: {
-    heading: '404 — Falsche Richtung',
-    description: 'Lass uns einen besseren Ort für Dich finden.'
+    landing: {
+      heading: '404 — Falsche Richtung',
+      subtitle: 'Lass uns einen besseren Ort für Dich finden.'
+    }
+  },
+  footer: {
+    imprint: 'Impressum',
+    privacyPolicy: 'Datenschutz'
   }
 }
