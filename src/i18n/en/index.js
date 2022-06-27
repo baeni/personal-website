@@ -3,30 +3,45 @@ export default {
     name: 'Home',
 
     landing: {
-      heading: 'I\'m baeni',
-      subtitle: '— a self-taught developer based in Germany with a fetish for design. Feel free to stalk my super active socials or inspect my open source projects below. Oh, and sometimes I game as well.',
+      heading: 'I am baeni',
+      subtitle: '– a self-taught developer based in Germany with a fetish for design. Feel free to stalk my super active socials or look at my open source projects below.',
       mailMe: 'Or mail me!'
-    },
-    contact: {
-      heading: 'Contact'
     },
     projects: {
       heading: 'Open Source Projects',
-      noLanguage: 'No language recognized',
       updated: 'Updated {time} ago',
       lessThanAMin: 'less than a minute',
       noDescription: 'No description available',
-      toSite: 'Visit site',
-      toGithub: 'Show on GitHub'
+      toSite: 'Visit site'
+    }
+  },
+  imprintPage: {
+    imprint: {
+      heading: 'Imprint',
+      subtitleParagraph: 'According to § 5 TMG',
+      country: 'Germany',
+      subtitleContact: 'Contact'
     },
-    footer: {
-      termsOfService: 'Terms of Service',
-      privacyPolicy: 'Privacy Policy',
-      imprint: 'Imprint'
+    privacyPolicy: {
+      heading: 'Privacy Policy',
+      subtitleConsent: 'Consent',
+      subtitleCollect: 'Information we collect',
+      subtitleUse: 'How we use your information',
+      subtitleLog: 'Log Files',
+      subtitleCookies: 'Cookies and Web Beacons',
+      subtitlePartners: 'Advertising Partners Privacy Policies',
+      subtitleThirdParty: 'Third Party Privacy Policies',
+      subtitleChildren: 'Children\'s Information'
     }
   },
   error404Page: {
-    heading: '404 — Wrong direction',
-    description: 'Let\'s find a better place for you to go.'
+    landing: {
+      heading: '404 — Wrong direction',
+      subtitle: 'Let\'s find a better place for you to go.'
+    }
+  },
+  footer: {
+    imprint: 'Imprint',
+    privacyPolicy: 'Privacy Policy'
   }
 }
